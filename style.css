@@ -66,19 +66,19 @@ body{
 
 .b1{
 	left:15%;
-	width:40px;
+	width:80px;
 	animation-delay:0s;
 }
 
 .b2{
 	left:45%;
-	width:70px;
+	width:150px;
 	animation-delay:2s;
 }
 
 .b3{
 	left:75%;
-	width:55px;
+	width:220px;
 	animation-delay:1s;
 }
 
