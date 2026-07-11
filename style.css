@@ -17,7 +17,7 @@ body{
 
 /* ローディング画面 */
 
-#loading{
+/*#loading{
     position:fixed;
     inset:0;
     background:#ffffff;
@@ -26,6 +26,27 @@ body{
     justify-content:center;
     align-items:center;
     opacity:1;
+    transition:opacity .8s;
+}*/
+
+#loading{
+    position:fixed;
+    inset:0;
+
+    background:
+        radial-gradient(circle at 50% 20%, rgba(255,255,255,.45) 0%, transparent 40%),
+        linear-gradient(
+            180deg,
+            #bfefff 0%,
+            #79d8f4 35%,
+            #3da7e3 70%,
+            #1f6fc5 100%
+        );
+
+    z-index:9999;
+    display:flex;
+    justify-content:center;
+    align-items:center;
     transition:opacity .8s;
 }
 
