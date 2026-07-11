@@ -25,37 +25,24 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
+    opacity:1;
     transition:opacity .8s;
 }
 
 #loading.loaded{
     opacity:0;
-    visibility:hidden;
+    pointer-events:none;
 }
 
 /*泡設定*/
-/*.bubble{
+.bubble{
 	position:absolute;
 	bottom:-100px;
 	width:50px;
 	opacity:0.7;
 	animation:bubbleup 5s linear infinite;
-}*/
-.bubble{
-
-    position:absolute;
-
-    top:100px;
-
-    left:100px;
-
-    width:80px;
-
-    opacity:1;
-
-    animation:none;
-
 }
+
 .b1{
 	left:15%;
 	width:40px;
@@ -68,7 +55,7 @@ body{
 	animation-delay:2s;
 }
 
-.b1{
+.b3{
 	left:75%;
 	width:55px;
 	animation-delay:1s;
