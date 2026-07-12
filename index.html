@@ -18,15 +18,45 @@
 		<img src="IMG_0052.png" class="bubble b8">
 		<div class = "loader"></div>
 	</div>
-	<main id = "contents">
-		<h1 class = "fadein">Invitaion</h1>	
-		<p class = "fadein">We invitate you to a magical birthday party.</p>
-		<div class = "fadein">
-		日時：7月12日
-		</div>
-		<div class = "fadein">
-		場所：JR船橋駅
-		</div>
+	<main id="contents">
+
+    	<!-- 光 -->
+    	<div class="light light1"></div>
+    	<div class="light light2"></div>
+    	<div class="light light3"></div>
+
+    	<!-- 水のゆらぎ -->
+    	<div class="water"></div>
+
+    	<div class="container">
+
+        	<h1 class="fadein title">
+            	Thank you for joining our party!
+        	</h1>
+
+        	<div class="glass fadein">
+
+            	<p>
+                	本日は素晴らしい誕生日会にご参列いただき、
+                	ありがとうございました。
+            	</p>
+
+            	<p>
+                	我々マーメイドラグーンの仲間たちによる公演は
+                	お楽しみいただけましたか？
+            	</p>
+
+            	<p>
+                	海の中の素敵な時間は一瞬ですが、
+                	これからも我々はあなたの一年が
+                	笑顔あふれるものとなるよう
+                	ずっと願っております。
+            	</p>
+
+        	</div>
+
+    	</div>
+
 	</main>
   	
 <script>
@@ -35,13 +65,12 @@ window.addEventListener("load", () => {
   setTimeout(() => {
     document.getElementById("loading").classList.add("loaded");
 
-    const items = document.querySelectorAll(".fadein");
-
-    items.forEach((item, index) => {
-      setTimeout(() => {
-        item.classList.add("show");
-      }, index * 400);
-    });
+    const title = document.querySelector(".title");
+	const glass = document.querySelector(".glass");
+	title.classList.add("show");
+	setTimeout(() => {
+    	glass.classList.add("show");
+	}, 3000);
 
   }, 5000);
 
